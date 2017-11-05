@@ -71,7 +71,8 @@ sans-serif;
 
 .action-block {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  // flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }

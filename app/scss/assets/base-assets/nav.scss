@@ -206,6 +206,48 @@ $mainFont: "Open Sans", sans-serif;
     border-bottom: 3px solid transparent;
     margin-bottom: 32px;
     @extend %default-transition;
+
+    &.active {
+      border-bottom: 3px solid #7fb82a;
+      background-color: #edf5f8;
+      .nav-list__link {
+        color: #7fb82a;
+      }
+      .nav-icon {
+        &.icon1 {
+          background: url("../img/two-icon/icon-dashboard-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon2 {
+          background: url("../img/two-icon/icon-forms-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon3 {
+          background: url("../img/two-icon/icon-people-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon4 {
+          background: url("../img/two-icon/icon-import-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon5 {
+          background: url("../img/two-icon/icon-history.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon6 {
+          background: url("../img/two-icon/icon-reports-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon7 {
+          background: url("../img/two-icon/icon-support-active.png") no-repeat center center;
+          background-size: contain;
+        }
+        &.icon8 {
+          background: url("../img/two-icon/icon-logout-active.png") no-repeat center center;
+          background-size: contain;
+        }
+      }
+    }
     &:hover {
       border-bottom: 3px solid #7fb82a;
       background-color: #edf5f8;

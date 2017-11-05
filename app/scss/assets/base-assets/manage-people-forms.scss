@@ -18,6 +18,9 @@ sans-serif;
   color: #1c9951;
   margin-bottom: 15px;
   display: block;
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+  }
 }
 
 .mf-select1 {
@@ -29,9 +32,54 @@ sans-serif;
     width: 22%;
     flex-grow: 1;
     margin-right: 20px;
+    @media screen and (max-width: 1200px) {
+      width: 25%;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 990px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 920px) {
+      margin-right: 0;
+      width: 100%;
+    }
+    &:nth-child(3) {
+      @media screen and (max-width: 990px) {
+        margin-bottom: 0px;
+      }
+      @media screen and (max-width: 920px) {
+        margin-bottom: 15px;
+      }
+    }
+    .select-title {
+      @media screen and (max-width: 683px) {
+        display: none;
+      }
+    }
   }
   .searh-input-holder {
     width: 20%;
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
+  }
+}
+
+.mf-select1--rec-form {
+  .select-action {
+    width: 22%;
+    flex-grow: 0;
+    @media screen and (max-width: 1200px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 40%;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 683px) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 }
 
@@ -50,10 +98,27 @@ sans-serif;
     flex-wrap: wrap;
     align-items: center;
     flex-basis: 50%;
+    @media screen and (max-width: 1240px) {
+      flex-basis: 100%;
+      margin-bottom: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
     .select-action {
       margin: 0;
       width: 40%;
       margin-right: 15px;
+      @media screen and (max-width: 683px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      .select-title {
+        @media screen and (max-width: 683px) {
+          display: none;
+        }
+      }
     }
   }
   &__right {
@@ -61,16 +126,33 @@ sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    flex-grow: 1;
+    justify-content: flex-end;
+    @media screen and (max-width: 1240px) {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
     button {
+      margin-left: 10px;
       &:first-child {
         width: 236px;
         font-size: 15px;
         margin: 0;
+        @media screen and (max-width: 683px) {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
       }
       &:last-child {
         width: 311px;
         line-height: 16px;
+        @media screen and (max-width: 683px) {
+          width: 100%; 
+          margin: 0;
+          margin-bottom: 15px;
+        }
       }
     }
   }

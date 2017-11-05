@@ -10,10 +10,11 @@ $mainFont: "Open Sans", sans-serif;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   @media screen and (max-width: 1770px) {
     width: 1310px;
     margin: 0 auto;
+    margin-bottom: 14px;
   }
   @media screen and (max-width: 1685px) {
     width: 1189px;

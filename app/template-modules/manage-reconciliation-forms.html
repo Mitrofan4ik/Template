@@ -1,0 +1,133 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-forms
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content content--manage-forms">
+      <div class="forms-tabs forms-manage-tabs">
+        <ul>
+          <li>Manage Federal Forms</li>
+          <li>Manage State Forms</li>
+          <li class="active">Manage Reconciliation Forms</li>
+        </ul>
+      </div>
+      <span class="manage-form-title">State Reconciliation</span>
+      <div class="mf-select1 mf-select1--rec-form">
+        <div class="select-action">
+          <span class="select-title">Payer</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Tax Year</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="grid" class="table-check table-check--manage-state-form"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 4
+            },
+            height: 240,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<span></span>",
+              field: "Reference No",
+              title: "Reference No.",
+              width: 188
+            }, {
+              template: "<span></span>",
+              field: "FormName",
+              title: "Form Name",
+              width: 167
+            }, {
+              template: "<span></span>",
+              field: "State",
+              title: "State",
+              width: 109
+            }, {
+              template: "<span></span>",
+              field: "TaxYear",
+              title: "Tax Year",
+              width: 133
+            }, {
+              template: "<span></span>",
+              field: "Tin",
+              title: "TIN",
+              width: 91
+            }, {
+              template: "<span></span>",
+              field: "StateAccountId",
+              title: "State Account ID",
+              width: 220
+            }, {
+              template: "<span></span>",
+              field: "SubmissionDate",
+              title: "Submission Date",
+              width: 208
+            }, {
+              template: "<span></span>",
+              field: "Status",
+              title: "Status",
+              width: 121
+            }, {
+              template: "<span></span>",
+              field: "Action",
+              title: "Action",
+              width: 140
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer
