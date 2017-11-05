@@ -1,0 +1,87 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-forms
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content content--manage-forms">
+      <div class="forms-tabs forms-manage-tabs">
+        <ul>
+          <li class="active">Filing History</li>
+          <li>Prepay History</li>
+          <li>State Filing History</li>
+          <li>W8/W9 Requests History</li>
+        </ul>
+      </div>
+    </div>
+    <div class="history-content">
+      <div class="history-content__right">
+        <div class="select-action">
+          <span class="select-title">Payer</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="history-content__left">
+        <div id="grid" class="table-check table-check--history"></div>
+        <script>
+          $(document).ready(function() {
+            $("#grid").kendoGrid({
+              dataSource: {
+                type: "odata",
+                transport: {
+                  read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                },
+                pageSize: 13
+              },
+              height: 790,
+              groupable: true,
+              sortable: true,
+              pageable: {
+                refresh: true,
+                pageSizes: true,
+                buttonCount: 5
+              },
+              columns: [{
+                template: "<span>[9/28/2017 1:29:22 AM]</span>",
+                field: "Time",
+                title: "Time",
+                width: 101
+              }, {
+                template: "<span>201234110 <span class='history-approved'>approved. </span><span class='history-download'>Click to Download </span>official 1099-K.</span>",
+                field: "Message",
+                title: "Message",
+                width: 140
+              }]
+            });
+          });
+        </script>
+        <!-- pagination -->
+        <div class="pagination">
+          //= template-assets/pagination
+        </div>
+        <!-- END: pagination -->
+      </div>
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

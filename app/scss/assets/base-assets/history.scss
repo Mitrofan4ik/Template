@@ -1,0 +1,11 @@
+.history-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__right{
+		width: 300px;
+	}
+	&__left {
+		flex-grow: 1;
+	}
+}
