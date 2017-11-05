@@ -1,0 +1,14 @@
+node_modules/
+bower_components/
+app/js/*.js
+app/*.html
+dist/
+app/css/assets/
+app/css/sourcemap/
+app/css/assets.css
+app/css/base.css
+*.css.map
+*.log
+*.cache
+*.orig
+.sublime-gulp-tmp.js

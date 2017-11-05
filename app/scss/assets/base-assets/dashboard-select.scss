@@ -1,0 +1,96 @@
+// dashboard select
+$mainFont: "Open Sans", sans-serif;
+
+.dashboard-select {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  @media screen and (max-width: 1550px) {
+    justify-content: flex-start;
+  }
+  
+  &-status {
+    flex-basis: 296px;    
+    margin: 0 10px;
+    @media screen and (max-width: 1770px) {
+      // flex-basis: 25%;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 1550px) {
+      flex-shrink: 1;
+    }
+    @media screen and (max-width: 940px) {
+      flex-grow: 1;
+    }
+  }
+  &-year {
+    flex-basis: 296px;  
+    margin: 0 10px;  
+    @media screen and (max-width: 1770px) {
+      // flex-basis: 25%;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 1550px) {
+      flex-shrink: 1;
+    }
+    @media screen and (max-width: 940px) {
+      flex-grow: 1;
+    }
+  }
+}
+.dashboard-button {
+  flex-basis: 311px;
+  margin: 0 10px;  
+  @media screen and (max-width: 1770px) {
+    // flex-basis: 250px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 1550px) {
+    flex-shrink: 1;
+  }
+  @media screen and (max-width: 940px) {
+    flex-grow: 1;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+.dashboard-input {
+  flex-basis: 449px;
+  margin: 0 10px;  
+  @media screen and (max-width: 1770px) {
+    flex-basis: 25%;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 1550px) {
+    flex-shrink: 1;
+  }
+  @media screen and (max-width: 940px) {
+    flex-grow: 1;
+  }
+  input {
+    font-family: $mainFont; 
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    box-shadow: 0.5px 0.9px 0 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    width: 100%;
+    &::-webkit-input-placeholder {
+      color: #8da4ae;
+    }
+    &::-moz-placeholder {
+      color: #8da4ae;
+    }
+    &:-ms-input-placeholder {
+      color: #8da4ae;
+    }
+    &:-moz-placeholder {
+      color: #8da4ae;
+    }
+  }
+}
+// END: dashboard select

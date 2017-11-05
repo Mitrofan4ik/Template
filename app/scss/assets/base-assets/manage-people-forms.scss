@@ -1,0 +1,77 @@
+$mainFont: "Open Sans",
+sans-serif;
+.forms-manage-tabs {
+  margin-bottom: 32px;
+  ul {
+    justify-content: flex-start;
+    li {
+      margin-right: 10px;
+    }
+  }
+}
+
+.manage-form-title {
+  font-family: $mainFont;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #1c9951;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.mf-select1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  .select-action {
+    margin: 0;
+    width: 22%;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  .searh-input-holder {
+    width: 20%;
+  }
+}
+
+.mf-check {
+  margin-bottom: 10px;
+}
+
+.mf-select2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 50%;
+    .select-action {
+      margin: 0;
+      width: 40%;
+      margin-right: 15px;
+    }
+  }
+  &__right {
+    flex-basis: 38%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      &:first-child {
+        width: 236px;
+        font-size: 15px;
+        margin: 0;
+      }
+      &:last-child {
+        width: 311px;
+        line-height: 16px;
+      }
+    }
+  }
+}

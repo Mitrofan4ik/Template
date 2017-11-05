@@ -1,0 +1,157 @@
+// dashboard table
+$mainFont: "Open Sans", sans-serif;
+
+.dashboard {
+  width: 100%;
+  padding: 0 15px;
+  background-color: #ffffff;
+  box-shadow: 0.7px 0.7px 1px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 1770px) {
+    overflow: auto;
+    width: 1310px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1685px) {
+    width: 1189px;
+  }
+  @media screen and (max-width: 1564px) {
+    width: 1000px;
+  }
+  @media screen and (max-width: 1296px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 940px) {
+    width: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 540px;
+  }
+  @media screen and (max-width: 657px) {
+    width: 440px;
+  }
+  @media screen and (max-width: 640px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 487px) {
+    width: 310px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 285px;
+  }
+  
+  
+}
+.dashboard-table {
+  font-family: $mainFont;
+  width: 100%;
+  table-layout: fixed;
+  // @media screen and (max-width: 1770px) {
+  //   width: 1600px;
+  // }
+  &__title {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #1b954f;
+    text-transform: uppercase;
+    @media screen and (max-width: 1296px) {
+      font-size: 14px;
+    }
+    th {
+      padding: 10px 0;
+      @media screen and (max-width: 1296px) {
+        padding: 5px 0;
+      }
+      &:last-child {
+        span {
+          &::before {
+            display: none;
+          }
+        }
+      }
+      span {
+        position: relative;
+        display: block;
+        padding: 14px 0;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          opacity: 0.2;
+          display: block;
+          background-color: #91a6ba;
+        }
+      }
+    }
+    .column1 {
+      width: 142px;
+    }
+    .column2 {
+      width: 139px;
+    }
+    .column3 {
+      width: 353px;
+      text-align: left;
+      padding-left: 34px;
+    }
+    .column4 {
+      width: 149px;
+      text-align: left;
+      padding-left: 26px;
+    }
+    .column5 {
+      width: 147px;
+    }
+    .column6 {
+      width: 142px;
+    }
+    .column7 {
+      width: 169px;
+    }
+    .column8 {
+      width: 137px;
+    }
+  }
+  &__status {
+    border-top: 1px solid rgba(145, 166, 186, 0.2);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #91a6ba;
+    @media screen and (max-width: 1296px) {
+      font-size: 13px;
+    }
+    &:nth-child(odd) {
+      background-color: rgba(240, 248, 229, 0.8);
+    }
+    td {
+      padding: 14px 0;
+      text-align: center;
+      vertical-align: middle;
+      @media screen and (max-width: 1296px) {
+        padding: 10px 0;
+      }
+      &:nth-child(3) {
+        text-align: left;
+        padding-left: 34px;
+      }
+      &:nth-child(4) {
+        text-align: left;
+        padding-left: 26px;
+      }
+      span {
+        padding: 5px 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// END: dashboard table

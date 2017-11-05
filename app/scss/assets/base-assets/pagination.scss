@@ -1,0 +1,112 @@
+// pagination
+$mainFont: "Open Sans", sans-serif;
+
+.pagination {
+  padding: 11px 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 0.5px 0.9px 0 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  @media screen and (max-width: 1770px) {
+    width: 1310px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 1685px) {
+    width: 1189px;
+  }
+  @media screen and (max-width: 1564px) {
+    width: 1000px;
+  }
+  @media screen and (max-width: 1300px) {
+    justify-content: flex-end;
+  }
+  @media screen and (max-width: 1296px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 940px) {
+    width: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 540px;
+  }
+  @media screen and (max-width: 657px) {
+    width: 440px;
+  }
+  @media screen and (max-width: 640px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 487px) {
+    width: 310px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 285px;
+  }
+}
+
+.pagin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  @media screen and (max-width: 487px) {
+    justify-content: center;
+  }
+}
+.pagin-list{
+  margin-bottom: 0;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 487px) {
+    margin-right: 0;
+  }
+
+  &__item {
+    margin-right: 14px;
+    cursor: pointer;
+    &:nth-child(2) {
+      width: 28px;
+      height: 28px;
+      background-color: #91a6ba;
+      border-radius: 14px;
+    }
+    span {
+      font-family: $mainFont;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-align: center;
+      display: block;
+      color: #ffffff;
+      line-height: 27px;
+    }
+    &.left {
+      display: block;
+      width: 11px;
+      height: 17px;
+      background: url("../img/pagin-left-disabled.png") no-repeat center center;
+      background-size: contain;
+    }
+    &.right {
+      display: block;
+      width: 11px;
+      height: 17px;
+      background: url("../img/pagin-right-active.png") no-repeat center center;
+      background-size: contain;
+    }
+  }
+}
+.pagin-items {
+  font-family: $mainFont;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #91a6ba;
+}
+// END: pagination

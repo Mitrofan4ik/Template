@@ -1,0 +1,95 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-people
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content">
+      <!-- manage people action panel -->
+      <div class="action-panel">
+        <div class="action-panel__left">
+          <button class="btn">Add Payer</button>
+          <button class="btn light">Add Recipeint</button>
+          <button class="btn light">Copy Recipient</button>
+        </div>
+        <div class="action-panel__right">
+          <div class="searh-input-holder">
+            <input type="text" placeholder="Search Recipients">
+            <i class="searh-icon"></i>
+          </div>
+        </div>
+      </div>
+      <!-- END: manage people action panel -->
+
+      <div id="grid" class="table-check table-check--add-payer"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 6
+            },
+            height: 300,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 40
+
+            }, {
+              template: "<span>Ravi Verma</span>",
+              field: "PayerName",
+              title: "Payer Name",
+              width: 218
+            }, {
+              template: "<span>22-2222222</span>",
+              field: "TaxId",
+              title: "TAx ID",
+              width: 300
+            }, {
+              template: "<span>Sea View</span>",
+              field: "Address",
+              title: "Address 1",
+              width: 305
+            }, {
+              template: "<span>Faytteville</span>",
+              field: "City",
+              title: "City",
+              width: 273
+            }, {
+              template: "<div class='action-block'><button class='action-btn'><i class='icon-message'></i></button><button class='action-btn'><i class='icon-edit'></i></button><button class='action-btn'><i class='delete-icon'></i></button></div>",
+              field: "Action",
+              title: "Action",
+              width: 262
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

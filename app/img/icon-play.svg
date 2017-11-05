@@ -1,0 +1,38 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="22px" height="22px">
+<defs>
+<filter id="Filter_0">
+    <feFlood flood-color="rgb(97, 149, 66)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+<filter filterUnits="userSpaceOnUse" id="Filter_1" x="9px" y="7px" width="11px" height="11px"  >
+    <feOffset in="SourceAlpha" dx="0.707" dy="0.707" />
+    <feGaussianBlur result="blurOut" stdDeviation="1.414" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+  <stop offset="0%" stop-color="rgb(227,239,245)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(251,253,253)" stop-opacity="1" />
+</linearGradient>
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(27, 105, 137)"
+ d="M11.000,-0.000 C17.075,-0.000 22.000,4.925 22.000,11.000 C22.000,17.075 17.075,22.000 11.000,22.000 C4.925,22.000 -0.000,17.075 -0.000,11.000 C-0.000,4.925 4.925,-0.000 11.000,-0.000 Z"/>
+</g>
+<g filter="url(#Filter_1)">
+<path fill-rule="evenodd"  fill="rgb(27, 105, 137)"
+ d="M9.000,14.534 C9.000,14.166 9.000,7.704 9.000,7.450 C9.000,7.120 9.339,6.875 9.675,7.068 C9.944,7.222 15.319,10.337 15.778,10.603 C16.079,10.778 16.074,11.195 15.778,11.371 C15.448,11.566 10.052,14.697 9.661,14.914 C9.375,15.074 9.000,14.897 9.000,14.534 Z"/>
+</g>
+<path fill="url(#PSgrad_0)"
+ d="M9.000,14.534 C9.000,14.166 9.000,7.704 9.000,7.450 C9.000,7.120 9.339,6.875 9.675,7.068 C9.944,7.222 15.319,10.337 15.778,10.603 C16.079,10.778 16.074,11.195 15.778,11.371 C15.448,11.566 10.052,14.697 9.661,14.914 C9.375,15.074 9.000,14.897 9.000,14.534 Z"/>
+</svg>

@@ -1,0 +1,112 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-people
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content">
+      <!-- manage people action panel -->
+      <div class="action-panel">
+        <div class="action-panel__left">
+          <button class="btn light">Add Payer</button>
+          <button class="btn">Add Recipeint</button>
+          <button class="btn light">Copy Recipient</button>
+        </div>
+        <div class="action-panel__right">
+          <div class="searh-input-holder">
+            <input type="text" placeholder="Search Recipients">
+            <i class="searh-icon"></i>
+          </div>
+        </div>
+      </div>
+      <!-- END: manage people action panel -->
+
+      //= template-assets/manage-people-selects
+
+      <div id="grid" class="table-check table-check--add-recipient"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 12
+            },
+            height: 690,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 30
+
+            }, {
+              template: "<span>asd Test Recipient Name 1</span>",
+              field: "Recipient",
+              title: "Recipient",
+              width: 188
+            }, {
+              template: "<span>Test R Add 1</span>",
+              field: "Address",
+              title: "Address",
+              width: 132
+            }, {
+              template: "<span>XXX-XX-9999</span>",
+              field: "TaxId",
+              title: "Tax ID",
+              width: 156
+            }, {
+              template: "<span>Test R City</span>",
+              field: "City",
+              title: "City",
+              width: 111
+            }, {
+              template: "<span>ravi@zenwork.com</span>",
+              field: "EmailId",
+              title: "Email ID",
+              width: 169
+            }, {
+              template: "<div class='tin-status'><button class='tin-btn rejected'>Rejected</button><button class='tin-btn rejected'>08/18/2017</button></div>",
+              field: "TinStatus",
+              title: "TIN Status",
+              width: 150
+            }, {
+              template: "<div><button class='ligth-btn'>Request TIN Match</button><div class='action-light'><button class='action-btn'><i class='icon-edit'></i></button><button class='action-btn'><i class='delete-icon'></i></button></div></div>",
+              field: "Action",
+              title: "Action",
+              width: 185
+            }, {
+              template: "<div><button class='ligth-btn'>W-9 Completed on - 5/26/2017</button><button class='ligth-btn'>Request W8</button></div>",
+              field: "SendRequest",
+              title: "Send W8 / W9 Request",
+              width: 270
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

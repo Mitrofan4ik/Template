@@ -1,0 +1,86 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-people
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content">
+      //= template-assets/mp-action-panel
+
+      <div id="grid" class="table-check"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 20
+            },
+            height: 780,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 58
+
+            }, {
+              template: "<span>asd Test Recipient Name 1</span>",
+              field: "PayerName",
+              title: "Payer Name",
+              width: 196
+            }, {
+              template: "<span>Test R Add 1</span>",
+              field: "RecipientName",
+              title: "Recipient name",
+              width: 260
+            }, {
+              template: "<span>Test R City</span>",
+              field: "Address",
+              title: "Address 1",
+              width: 223
+            }, {
+              template: "<span>Test R City</span>",
+              field: "TaxId",
+              title: "TAx ID",
+              width: 207
+            }, {
+              template: "<span>Test R City</span>",
+              field: "City",
+              title: "City",
+              width: 170
+            }, {
+              template: "<div><button class='copy-btn'><i class='copy-icon'></i><span>Copy to another payer</span></button><button class='copy-btn'><i class='delete-icon'></i><span>Delete Recipient</span></button></div>",
+              field: "Action",
+              title: "Action",
+              width: 277
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

@@ -1,0 +1,267 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-manage-forms
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content content--manage-forms">
+      <div class="forms-tabs forms-manage-tabs">
+        <ul>
+          <li class="active">Manage Federal Forms</li>
+          <li>Manage State Forms</li>
+          <li>Manage Reconciliation Forms</li>
+        </ul>
+      </div>
+      <span class="manage-form-title">Form 1099/W-2/1095/1098/3921/3922/480</span>
+      <div class="mf-select1">
+        <div class="select-action">
+          <span class="select-title">Payer</span>
+          <div class="select-default">
+            <select>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+              <option value="Payer">Payer</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Tax Year</span>
+          <div class="select-default">
+            <select>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+              <option value="Tax Year">Tax Year</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Select Type</span>
+          <div class="select-default green">
+            <select>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+              <option value="Select Type">Select Type</option>
+            </select>
+          </div>
+        </div>
+        <div class="searh-input-holder">
+          <input type="text" placeholder="Search Recipients">
+          <i class="searh-icon"></i>
+        </div>
+      </div>
+      <div class="mf-check">
+        <div class="check-btn">
+          <div class="checkbox-holder">
+            <label class="check-label">
+              <input type="checkbox">
+              <span class="icon-check"></span>
+              View Tin
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="grid" class="table-check table-check--manage-form1"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 4
+            },
+            height: 240,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 20
+
+            }, {
+              template: "<span>216544556</span>",
+              field: "ReferenceNumber",
+              title: "Reference NUmber",
+              width: 180
+            }, {
+              template: "<span>Test Business Data 3</span>",
+              field: "RecipientName",
+              title: "Recipient Name",
+              width: 177
+            }, {
+              template: "<span>XXXX XX 2222</span>",
+              field: "Ein",
+              title: "EIN",
+              width: 119
+            }, {
+              template: "<span>1099 Misc</span>",
+              field: "FormName",
+              title: "Form Name",
+              width: 122
+            }, {
+              template: "<span>Submitted</span>",
+              field: "Status",
+              title: "Status",
+              width: 88
+            }, {
+              template: "<span>Request Not Sent</span>",
+              field: "PortalOptInStatusTinStatus",
+              title: "Portal Opt-In Status",
+              width: 203
+            }, {
+              template: "<span>11/08/2016</span>",
+              field: "Submitted Date",
+              title: "Submitted Date",
+              width: 155
+            }, {
+              template: "<div class='searh-input-holder'><input type='text' placeholder='Submitted to IRS'></div>",
+              field: "ScheduledDate",
+              title: "Scheduled Date",
+              width: 165
+            }, {
+              template: "<div class='select-default'><select><option value ='Select'>Select</option><option value ='Select'>Select</option></select></div>",
+              field: "Actions",
+              title: "Actions",
+              width: 140
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+      <span class="manage-form-title">Form 1099/W-2/1095/1098/3921/3922/480</span>
+
+      <div class="mf-select2">
+        <div class="mf-select2__left">
+          <div class="select-action">
+            <span class="select-title">Employer</span>
+            <div class="select-default">
+              <select>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+              <option value="Select Employer">Select Employer</option>
+            </select>
+            </div>
+          </div>
+          <div class="select-action">
+            <span class="select-title">Tax Year</span>
+            <div class="select-default">
+              <select>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="mf-select2__right">
+          <button class="download-btn btn">
+            <span>Download Multiple PDF</span>
+            <i class="download-icon"></i>
+          </button>
+          <button class="btn red">Export to Excel</button>
+        </div>
+      </div>
+
+      <div id="grid2" class="table-check table-check--manage-form2"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid2").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 4
+            },
+            height: 240,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 20
+
+            }, {
+              template: "<span>XXXX XX 2222</span>",
+              field: "ReferenceNumber",
+              title: "Reference NUmber",
+              width: 180
+            }, {
+              template: "<span>6543121</span>",
+              field: "Ein",
+              title: "EIN",
+              width: 177
+            }, {
+              template: "<span>Form 1099 Misc</span>",
+              field: "FormName",
+              title: "Form Name",
+              width: 119
+            }, {
+              template: "<span>Rejected</span>",
+              field: "Status",
+              title: "Status",
+              width: 122
+            }, {
+              template: "<div class='action-block'><button class='action-btn'><i class='icon-eye'></i></button><button class='action-btn'><i class='icon-print'></i></button></div>",
+              field: "Actions",
+              title: "Actions",
+              width: 88
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

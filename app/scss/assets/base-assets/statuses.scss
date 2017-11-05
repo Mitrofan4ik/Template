@@ -1,0 +1,27 @@
+// statuses
+$mainFont: "Open Sans", sans-serif;
+
+.statuse-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+  &__item {
+    margin: 0 14px;
+    font-size: 0;
+    span {
+      font-family: $mainFont;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #91a6ba;
+    }
+    .indicator-state {
+      margin-right: 8px;
+    }
+  }
+}
+// END: statuses
