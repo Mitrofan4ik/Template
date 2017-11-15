@@ -1,0 +1,89 @@
+$mainFont: "Open Sans",
+sans-serif;
+.review-check-group--ves {
+  justify-content: space-between;
+}
+
+.select-ves-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 88%;
+  @media screen and (max-width: 1474px) {
+    width: 82%;
+  }
+  @media screen and (max-width: 1120px) {
+    width: 100%;
+  }
+  .select-action {
+    width: 30%;
+    margin-left: 10px;
+    @media screen and (max-width: 1474px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 990px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    &:nth-child(1) {
+      .select-title {
+        width: 170px;
+        @media screen and (max-width: 990px) {
+          width: 18%;
+        }
+      }
+    }
+    .select-title {
+      @media screen and (max-width: 990px) {
+        width: 18%;
+      }
+      @media screen and (max-width: 683px) {
+        display: none;
+      }
+    }
+    .select-default {
+      @media screen and (max-width: 990px) {
+        max-width: 82%;
+        width: 82%;
+      }
+      @media screen and (max-width: 683px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.coments-form {
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: inset 1.4px 1.4px 0 0 rgba(0, 0, 0, 0.21);
+  padding: 25px 28px 14px 28px;
+  margin-top: 15px;
+  @media screen and (max-width: 990px) {
+    padding: 10px;
+  }
+  &-title {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #505050;
+    display: block;
+    margin-bottom: 14px;
+    text-decoration: underline;
+  }
+  textarea {
+    font-family: $mainFont;
+    width: 100%;
+    height: 141px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0.7px 0.7px 1px 0 rgba(0, 0, 0, 0.14);
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: rgba(80, 80, 80, 0.5);
+    padding: 16px 18px;
+    border: none;
+  }
+}

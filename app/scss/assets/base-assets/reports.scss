@@ -1,0 +1,333 @@
+//datepicker
+.datepicker-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+}
+.dropdown-menu {
+    font-size: 14px;
+}
+.datepicker table tr td, .datepicker table tr th {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.datepicker .datepicker-switch {
+    width: 145px;
+}
+.table-condensed>tbody>tr>td {
+    padding: 5px;
+    vertical-align: middle;
+}
+//END:datepicker
+
+//wrap-calendar
+.wrap-calendar {
+    .input-group-addon {
+        display: inline-block;
+        font-size: 16px;
+        color: #8da4ae;
+        margin-right: 6px;
+    }
+    .input-daterange {
+        input {
+            display: inline-block;
+            width: 100%;
+            max-width: 155px;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #8da4ae;
+            vertical-align: middle;
+            background-color: #dfebf0;
+            background-image: none;
+            border: none;
+            border-radius: 4px;
+            box-shadow: #cbd1d2 1px 1px 0 inset;
+            cursor: pointer;
+            padding-right: 42px;
+            text-align: left;
+        }
+        .form-control {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    .input-ico {
+        display: inline-block;
+        height: 34px;
+        width: 36px;
+        margin-left: -10px;
+        background: #f9f9f9;
+        border-radius: 4px;
+        box-shadow: #cbd1d2 1px 1px 0;
+        vertical-align: middle;
+        margin-left: -40px;
+        pointer-events: none;
+        span {
+            position: relative;
+            display: block;
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+            &:before {
+                content: "";
+                position: absolute;
+                height: 18px;
+                width: 18px;
+                background-image: url(../img/icon-calendar.png);
+                background-repeat: no-repeat;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+    .input-group {
+        margin-bottom: 40px;
+    }
+    .datepicker table tr td, .datepicker table tr th {
+        color: #8da4ae;
+    }
+    .form-control {
+        .input-ico {
+            opacity: 0.8;
+            transition: all 0.25s ease-in-out;
+        }
+        &:hover {
+            .input-ico {
+                opacity: 1;
+            }
+        }
+    }
+}
+//END: wrap-calendar
+
+//report filters
+.report-filters {
+    margin-bottom: 30px;
+    ul {
+        font-size: 0;
+        line-height: 0;
+        li {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 14px;
+            color: #8da4ae;
+            font-weight: 500;
+            height: 39px;
+            padding: 0 15px;
+            margin-right: 2px;
+            margin-bottom: 17px;
+            cursor: pointer;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background-color: #f6f6f7;
+            box-shadow: #cbd1d2 1px 1px 0;
+            transition: all 0.15s ease-in-out;
+            &:hover {
+                opacity: 0.8;
+            }
+            a {
+                color: inherit;
+                display: inline-block;
+                line-height: 39px;
+            }
+        }
+        .active-filter {
+            color: #feffff;
+            background: #298f1b;
+        }
+    }
+}
+//report filters
+
+//reporter-container
+.reporter-container {
+    .report-choose {
+        font-size: 16px;
+        color: #1c9951;
+    }
+}
+.report-table {
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid #b9cbd1;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .report-col {
+        display: inline-block;
+        width: calc(100% / 2);
+        vertical-align: top;
+        &:first-child {
+            border-right: 1px solid #b9cbd1;
+        }
+    }
+    .report-head {
+        position: relative;
+        background: #eef7f0;
+        border-bottom: 1px solid #b9cbd1;
+        height: 40px;
+        text-align: center;
+        p {
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            line-height: 39px;
+            color: #768488;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        .report-arrow {
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            top: 11px;
+            span {
+                display: inline-block;
+                margin-right: 10px;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .arrow-right {
+            right: 50px;
+        }
+        .arrow-left {
+            left: 50px;
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .report-body {
+        height: 327px;
+        background: #fff;
+        overflow-y: scroll;
+        li {
+            text-transform: uppercase;
+            color: #939393;
+            font-size: 14px;
+            line-height: 25px;
+            padding: 10px 20px 10px 33px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            &:hover {
+                background: #eef7f0;
+            }
+        }
+        .selected {
+            background: #eef7f0;
+            color: #626262;
+        }
+    }
+}
+.report-footer {
+    text-align: right;
+    .report-btn {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+        display: inline-block;
+        height: 39px;
+        margin-right: 2px;
+        margin-bottom: 17px;
+        padding: 0 15px;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color: #feffff;
+        background: #298f1b;
+        min-width: 150px;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+//END: reporter-container
+
+
+
+@media screen and (max-width: 900px) {
+    .report-table .report-head {
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .report-col:nth-child(2) .report-head {
+        text-align: right;
+    }
+    .report-filters ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .report-table .report-head p {
+        font-size: 15px;
+    }
+    .report-table .report-head .arrow-right {
+        right: 0px;
+    }
+    .report-table .report-head .arrow-left {
+        left: 10px;
+    }
+    .report-table .report-head {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .report-table .report-body li {
+        padding: 10px 20px 10px 15px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .report-table .report-col {
+        width: 100%;
+    }
+    .report-table .report-col:first-child {
+        border-right: 0;
+    }
+    .report-col:nth-child(2) .report-head {
+        text-align: left;
+    }
+    .report-table .report-head .arrow-left {
+        left: inherit;
+        right: 10px;
+    }
+    .report-table .report-body {
+        height: 230px;
+    }
+}

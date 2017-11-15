@@ -1,0 +1,288 @@
+.k-ie9 {
+  .mf-select1--forms {
+    display: block;
+    .select-action {
+      display: inline-block;
+      width: 25%;
+      @media screen and (max-width: 1564px) {
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 50%;
+        margin-right: 0;
+      }
+      @media screen and (max-width: 920px) {
+        width: 100%;
+        margin-right: 0;
+      }
+      .select-default {
+        @media screen and (max-width: 920px) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+    .searh-input-holder {
+      display: inline-block;
+    }
+    .select-title {
+      width: 95px;
+      @media screen and (max-width: 1895px) {
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width: 683px) {
+        display: none;
+      }
+    }
+  }
+  .mf-select2 {
+    display: block;
+    font-size: 0;
+    &__right {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right;
+      @media screen and (max-width: 1895px) {
+        width: 100%;
+        text-align: left;
+      }
+      .btn {
+        @media screen and (max-width: 920px) {
+          width: 100%;
+          margin: 0 auto 15px;
+        }
+      }
+    }
+    &__left {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      @media screen and (max-width: 1895px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width: 920px) {
+        width: 100%;
+      }
+      .select-action {
+        width: 48%;
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: 1895px) {
+          width: 30%;
+        }
+        @media screen and (max-width: 1200px) {
+          width: 50%;
+          margin-right: 0;
+        }
+        @media screen and (max-width: 920px) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .select-default {
+          @media screen and (max-width: 920px) {
+            max-width: 100%;
+          }
+        }
+        .select-title {
+          @media screen and (max-width: 920px) {
+            margin-bottom: 15px;
+          }
+          @media screen and (max-width: 683px) {
+            display: none;
+          }
+        }
+      }
+      .select-title {
+        width: 80px;
+      }
+    }
+  }
+  .table-check--manage-form1 {
+    .select-default::before {
+      right: -15px;
+    }
+  }
+  .action-panel {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    &__left {
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__right {
+      float: right;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .table-check {
+    .copy-btn {
+      display: block;
+      font-size: 0;
+      .copy-icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .delete-icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .mp-select-panel {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    &__right {
+      display: inline-block;
+      vertical-align: top;
+      @media screen and (max-width: 1260px) {
+        width: 100%;
+      }
+      .select-default {
+        max-width: 74%;
+        @media screen and (max-width: 1260px) {
+          max-width: 100%;
+        }
+      }
+      .select-title {
+        @media screen and (max-width: 1260px) {
+          margin-bottom: 15px;
+        }
+      }
+      @media screen and (max-width: 1855px) {
+        margin-bottom: 15px;
+      }
+    }
+    &__center {
+      display: inline-block;
+      vertical-align: top;
+      width: 650px;
+      @media screen and (max-width: 1260px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 725px) {
+        padding: 0;
+      }
+      .select-title {
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: 1260px) {
+          margin-bottom: 15px;
+        }
+        @media screen and (max-width: 725px) {
+          display: none;
+        }
+      }
+      .searh-input-holder {
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: 725px) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+      .btn {
+        display: inline-block;
+        vertical-align: middle;
+        @media screen and (max-width: 725px) {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &__left {
+      display: inline-block;
+      vertical-align: top;
+      float: right;
+      @media screen and (max-width: 1855px) {
+        clear: both;
+        float: none;
+      }
+      @media screen and (max-width: 1770px) {
+        float: right;
+      }
+      @media screen and (max-width: 1610px) {
+        float: none;
+        width: 320px;
+        display: block;
+      }
+    }
+  }
+  .mp-select-check {
+    display: table;
+    width: 100%;
+    .select-action {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      @media screen and (max-width: 1260px) {
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+    }
+    .select-default {
+      max-width: 62%;
+      @media screen and (max-width: 1260px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .exel-btn {
+    display: block;
+    font-size: 0;
+    .exel-icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .mf-select1--rec-form {
+    display: block;
+    .select-action {
+      display: inline-block;
+      vertical-align: middle;
+      width: 28%;
+      @media screen and (max-width: 1685px) {
+        width: 35%;
+        margin-right: 0;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+    }
+    .select-title {
+      width: 80px;
+      @media screen and (max-width: 990px) {
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width: 683px) {
+        display: none;
+      }
+    }
+  }
+  .mf-select1--forms {
+    .select-action {
+      @media screen and (max-width: 1564px) {
+        width: 33%;
+        margin-right: 0;
+      }
+      @media screen and (max-width: 990px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

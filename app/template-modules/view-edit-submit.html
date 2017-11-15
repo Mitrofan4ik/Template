@@ -1,0 +1,232 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      <div class="site-header__info">
+        <button id="jsBurgerMenuMobile" class="nav-top__burger--mobile"></button>
+        <div class="rigth-side">
+          <div class="icon-title">
+            <img src="img/header/icon-forms-white.png" alt="image">
+          </div>
+          <span class="header-title">View / Edit / Submit</span>
+        </div>
+        <div class="left-side">
+          <a href="#" class="header-link">
+            <img src="img/header/icon-people-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-questions-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-search-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-settings-white.png" alt="image">
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content">
+      <div class="review-select-group">
+        <div class="select-action">
+          <span class="select-title">Rejected Reference Number</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+              <option value="Select Reference">Select Reference</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Form Name</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+              <option value="Select Form">Select Form</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Payer Name</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+              <option value="Select Payer">Select Payer</option>
+            </select>
+          </div>
+        </div>
+        <div class="select-action">
+          <span class="select-title">Tax Year</span>
+          <div class="select-default">
+            <select>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+              <option value="Select Year">Select Year</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="review-check-group review-check-group--ves">
+        <div class="check-btn">
+          <div class="checkbox-holder">
+            <label class="check-label">
+              <input type="checkbox">
+              <span class="icon-check"></span>
+              View Tin
+            </label>
+          </div>
+        </div>
+        <div class="select-ves-group">
+          <div class="select-action">
+            <span class="select-title">Select Options</span>
+            <div class="select-default">
+              <select>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+                <option value="Calculate efile Assist.com fee">Calculate efile Assist.com fee</option>
+              </select>
+            </div>
+          </div>
+          <div class="select-action">
+            <span class="select-title">Prepay Now</span>
+            <div class="select-default green">
+              <select>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+                <option value="Select to prepay">Select to prepay</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="grid" class="table-check table-check--ves"></div>
+      <script>
+        $(document).ready(function() {
+          $("#grid").kendoGrid({
+            dataSource: {
+              type: "odata",
+              transport: {
+                read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+              },
+              pageSize: 6
+            },
+            height: 390,
+            groupable: true,
+            sortable: true,
+            pageable: {
+              refresh: true,
+              pageSizes: true,
+              buttonCount: 5
+            },
+            columns: [{
+              template: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              title: "<div class='checkbox'><label class='check-label'><input type='checkbox'><span class='icon-check'></span></label></div>",
+              width: 45
+
+            }, {
+              template: "<span>01/06/2017</span>",
+              field: "Date",
+              title: "Date",
+              width: 90
+            }, {
+              template: "<span>XXXX XX 2222</span>",
+              field: "Tin",
+              title: "Tin",
+              width: 129
+            }, {
+              template: "<span>Ravi Verma</span>",
+              field: "Name",
+              title: "Name",
+              width: 179
+            }, {
+              template: "<span>$ 77,200.00</span>",
+              field: "Amount$",
+              title: "Amount ($)",
+              width: 132
+            }, {
+              template: "<span>Recipient EMail</span>",
+              field: "RecipientEmail",
+              title: "Recipient Email",
+              width: 149
+            }, {
+              template: "<span>Recipient EMail</span>",
+              field: "UspsMail",
+              title: "USPS mail",
+              width: 127
+            }, {
+              template: "<span>Form 1099 Misc</span>",
+              field: "TinMatch",
+              title: "TIN Match",
+              width: 140
+            }, {
+              template: "<span></span>",
+              field: "StateFiling",
+              title: "State Filing",
+              width: 141
+            }, {
+              template: "<span>01/06/2017</span>",
+              field: "ScheduleDate",
+              title: "Schedule Date",
+              width: 150
+            }, {
+              template: "<div class='action-block'><button class='action-btn'><i class='icon-eye'></i></button><button class='action-btn'><i class='icon-print'></i></button></div>",
+              field: "Actions",
+              title: "Actions",
+              width: 117
+            }]
+          });
+        });
+      </script>
+      <!-- pagination -->
+      <div class="pagination">
+        //= template-assets/pagination
+      </div>
+      <!-- END: pagination -->
+      <button class="btn">Email & efile</button>
+      <button class="btn red">Reject</button>
+
+      <form action="#" class="coments-form">
+        <span class="coments-form-title">Coments</span>
+        <textarea name="coments" id="coments" placeholder="Reason for Rejection..."></textarea>
+      </form>
+    </div>
+    <!-- END: site content -->
+    //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

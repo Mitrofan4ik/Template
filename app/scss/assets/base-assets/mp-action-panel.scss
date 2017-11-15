@@ -79,7 +79,7 @@ sans-serif;
 
 .action-btn {
   background: transparent;
-  margin: 0 27px;
+  margin: 0 20px;
 }
 
 .copy-icon {
@@ -180,6 +180,9 @@ sans-serif;
   padding: 0 13px;
   text-transform: uppercase;
   margin-bottom: 2px;
+  @media screen and (max-width: 1787px) {
+    font-size: 13px;
+  }
 }
 
 .action-light {

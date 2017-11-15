@@ -1,7 +1,9 @@
 // pagination
-$mainFont: "Open Sans", sans-serif;
-
+$mainFont: "Open Sans",
+sans-serif;
 .pagination {
+  margin: 0;
+  width: 100%;
   padding: 11px 20px;
   border-radius: 8px;
   background-color: #f4f4f4;
@@ -9,8 +11,11 @@ $mainFont: "Open Sans", sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 14px;
+  &--stuses {
+    justify-content: space-between;
+  } 
   @media screen and (max-width: 1770px) {
     width: 1310px;
     margin: 0 auto;
@@ -53,12 +58,12 @@ $mainFont: "Open Sans", sans-serif;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-left: auto;
   @media screen and (max-width: 487px) {
     justify-content: center;
   }
 }
-.pagin-list{
+
+.pagin-list {
   margin-bottom: 0;
   margin-right: 15px;
   display: flex;
@@ -66,7 +71,6 @@ $mainFont: "Open Sans", sans-serif;
   @media screen and (max-width: 487px) {
     margin-right: 0;
   }
-
   &__item {
     margin-right: 14px;
     cursor: pointer;
@@ -102,6 +106,7 @@ $mainFont: "Open Sans", sans-serif;
     }
   }
 }
+
 .pagin-items {
   font-family: $mainFont;
   font-size: 15px;
@@ -110,4 +115,5 @@ $mainFont: "Open Sans", sans-serif;
   text-align: left;
   color: #91a6ba;
 }
+
 // END: pagination

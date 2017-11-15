@@ -1,6 +1,5 @@
 node_modules/
 bower_components/
-app/js/*.js
 app/*.html
 dist/
 app/css/assets/

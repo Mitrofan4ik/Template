@@ -22,6 +22,7 @@ body {
 }
 
 .main-content {
+  position: relative;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -30,11 +31,78 @@ body {
   flex-wrap: nowrap;
   overflow-x: hidden;
   position: relative;
-  // height: 100%;
+  padding-top: 5px;
+  min-height: 100%;
+  z-index: 1;
+  @media screen and (max-width: 1770px) {
+    overflow-x: visible;
+  }
+  &.overflow {
+    overflow-x: hidden;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #1c9951;
+    z-index: 2;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 248px;
+    height: 100%;
+    background-color: #f5f9fd;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 1770px) {
+      transform: translateX(-248px);
+    }
+  }
+  &.hide-after {
+    &::after {
+      content: '';
+      width: 5px;
+      @media screen and (max-width: 1770px) {
+        transform: translateX(0px);
+      }
+    }
+  }
 }
 
+// .show-menu {
+//   animation: showMenu 0.3s ease-in-out alternate forwards;
+// }
+// @keyframes showMenu {
+//   from {
+//     width: 50px;
+//     // transform: translateX(-200px);
+//   }
+//   to {
+//     width: 248px;
+//     // transform: translateX(0);
+//   }
+// }
+// @keyframes hideMenu {
+//   from {
+//     width: 248px;
+//     // transform: translateX(0);
+//   }
+//   to {
+//     width: 50px;
+//     // transform: translateX(-200px);
+//   }
+// }
 .nav-block {
   width: 248px;
+  flex: 0 0 auto;
+  display: block;
+  min-height: 100%;
 }
 
 .general-block {
@@ -42,6 +110,8 @@ body {
   align-items: stretch;
   transform: translateX(0);
   transition: transform 1s ease;
+  flex: 1 1 1%;
+  position: relative;
   padding-bottom: 85px;
 }
 
@@ -55,12 +125,20 @@ body {
   padding: 21px 55px;
   @media screen and (max-width: 1550px) {
     padding: 21px 25px;
+    padding-bottom: 85px;
   }
   @media screen and (max-width: 657px) {
     padding: 21px 10px;
+    padding-bottom: 85px;
   }
   &--manage-forms {
     padding: 0 55px 21px 55px;
+    padding-bottom: 85px;
+    overflow: hidden;
+    @media screen and (max-width: 657px) {
+      padding: 0 10px 21px;
+      padding-bottom: 85px;
+    }
   }
 }
 
@@ -107,7 +185,6 @@ body {
   }
   &:hover {
     opacity: 0.8;
-
   }
 }
 
@@ -118,6 +195,11 @@ body {
   box-shadow: 0.5px 0.9px 0 0 rgba(0, 0, 0, 0.12);
   border: none;
   width: 100%;
+  // IE 10 max-width: 300px;
+  max-width: 280px;
+  @media screen and (max-width: 990px) {
+    max-width: inherit;
+  }
   color: #8da4ae;
   position: relative;
   &::after {
@@ -128,6 +210,7 @@ body {
     display: block;
     width: 8px;
     height: 7px;
+    z-index: 5;
     background: url('../img/arrow-down.svg') no-repeat center center;
     background-size: contain;
     transform: translate( 0%, -50%);
@@ -306,6 +389,40 @@ body {
     @media screen and (max-width: 370px) {
       margin-bottom: 10px;
     }
+  }
+}
+
+.checkbox-group {
+  padding-left: 10px;
+  @media screen and (max-width: 1550px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .checkbox--group {
+      margin-right: 15px;
+    }
+  }
+  @media screen and (max-width: 1320px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .checkbox--group {
+      width: 100%;
+    }
+  }
+}
+
+.checkbox--group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+  line-height: 2.47;
+  letter-spacing: 0.3px;
+  color: #505050;
+  font-family: $mainFont;
+  .check-label {
+    margin-right: 38px;
   }
 }
 

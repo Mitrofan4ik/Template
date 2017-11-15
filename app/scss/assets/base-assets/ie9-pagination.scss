@@ -1,0 +1,34 @@
+.k-ie9 {
+  .pagination {
+    display: table;
+  }
+  .statuse-list {
+    font-size: 0;
+    display: table-cell;
+    vertical-align: middle;
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+    &__item {
+      display: inline-block;
+    }
+  }
+  .pagin {
+    display: table-cell;
+    font-size: 0;
+    text-align: right;
+    vertical-align: middle;
+    &-list {
+      display: inline-block;
+      vertical-align: middle;
+      &__item {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &-items {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

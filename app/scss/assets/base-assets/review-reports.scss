@@ -1,0 +1,118 @@
+.review-select-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  .select-action {
+    width: 22%;
+    margin-bottom: 0;
+    @media screen and (max-width: 1564px) {
+      width: 50%;
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+    @media screen and (max-width: 1320px) {
+      width: 100%;
+      padding-left: 0px;
+    }
+    @media screen and (max-width: 683px) {
+      .select-title {
+        display: none;
+      }
+    }
+    &:first-child {
+      width: 30%;
+      .select-title {
+        width: 400px;
+        @media screen and (max-width: 1564px) {
+          width: 35%;
+        }
+      }
+      @media screen and (max-width: 1564px) {
+        width: 50%;
+        margin-bottom: 15px;
+        padding-left: 10px;
+      }
+      @media screen and (max-width: 1320px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+      @media screen and (max-width: 990px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+    }
+    .select-default {
+      max-width: 230px;
+      @media screen and (max-width: 1564px) {
+        max-width: 65%;
+        width: 65%;
+      }
+      @media screen and (max-width: 683px) {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0px;
+      }
+    }
+    .select-title {
+      @media screen and (max-width: 1564px) {
+        width: 35%;
+      }
+    }
+  }
+}
+
+.review-check-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  .check-btn {
+    @media screen and (max-width: 1120px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.review-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 1120px) {
+    width: 100%;
+  }
+  button {
+    &:nth-child(1) {
+      width: 206px;
+      @media screen and (max-width: 920px) {
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      width: 236px;
+      @media screen and (max-width: 920px) {
+        width: 100%;
+      }
+    }
+    &:nth-child(3) {
+      width: 311px;
+      @media screen and (max-width: 920px) {
+        width: 100%;
+      }
+    }
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 15px;
+    @media screen and (max-width: 1120px) {
+      margin-left: 0;
+    }
+    @media screen and (max-width: 920px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.page-btn {
+  float: right;
+}

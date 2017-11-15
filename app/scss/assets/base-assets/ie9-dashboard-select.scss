@@ -1,0 +1,48 @@
+.k-ie9 {
+  .dashboard-select {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  .dashboard-input {
+    display: inline-block;
+    width: 24%;
+    margin-right: 15px;
+    @media screen and (max-width: 1900px) {
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 940px) {
+      width: 100%;
+    }
+  }
+  .dashboard-select-status {
+    display: inline-block;
+    width: 24%;
+    margin-right: 15px;
+    @media screen and (max-width: 940px) {
+      width: 100%;
+    }
+    .select-default {
+      max-width: 100%;
+    }
+  }
+  .dashboard-select-year {
+    display: inline-block;
+    width: 24%;
+    margin-right: 15px;
+    .select-default {
+      max-width: 100%;
+    }
+    @media screen and (max-width: 940px) {
+      width: 100%;
+    }
+  }
+  .dashboard-button {
+    display: inline-block;
+    width: 25%;
+
+    @media screen and (max-width: 940px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.support-search {
+  display: flex;
+  justify-content: flex-end;
+
+  .searh-input-holder {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+.support-content {
+  background-color: #fff;
+  border-radius: 3px 3px 0 3px;
+  padding-top: 25px;
+  margin-top: 17px;
+
+  .support-browser-all {
+    max-width: 230px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e5e7;
+    margin-left: 25px;
+
+    p {
+      margin-bottom: 0;
+      font-size: 19px;
+      color: #1c9951;
+      padding-left: 15px;
+    }
+  }
+
+  .support-row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 25px;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+      justify-content: flex-start;
+    }
+
+    .single-topic {
+      width: 30%;
+      padding: 0 15px 18px;
+      @media (max-width: 992px) {
+        width: 50%;
+        margin-bottom: 50px;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &.single-topic-border {
+        border-bottom: 1px solid #e0e5e7;
+        margin-bottom: 20px;
+        @media (max-width: 992px) {
+          border: none;
+          margin-bottom: 50px;
+        }
+      }
+      &.last-topic {
+        padding-top: 21px;
+        border-top: 1px solid #e0e5e7;
+        margin-right: 15px;
+        @media (max-width: 992px) {
+          border: none;
+          padding-top: 0;
+          margin-right: 0;
+        }
+      }
+
+      h4 {
+        font-size: 19px;
+        color: #637d88;
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+
+      p {
+        margin-bottom: 5px;
+        margin-left: 15px;
+        padding-left: 18px;
+        font-size: 17px;
+        color: #7fb82a;
+        line-height: 25px;
+        position: relative;
+
+        &:before {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -7px;
+          width: 17px;
+          height: 23px;
+          content: "";
+          background-image: url('../img/icon-articles.png');
+          background-size: cover;
+        }
+
+        a {
+          display: inline-block;
+          padding: 0 8px;
+          margin-left: 5px;
+          background-color: #edf5f8;
+          text-transform: uppercase;
+          font-size: 13px;
+          color: #7e929b;
+          border-radius: 3px;
+          border-right: 1px solid #d9d9d9;
+          border-bottom: 1px solid #d9d9d9;
+          line-height: 24px;
+          transition: all .3s ease;
+          &:hover {
+            background-color: #e7f6fb;
+          }
+        }
+      }
+
+      ul {
+        margin-left: 15px;
+        border-left: 1px solid #e0e5e7;
+        margin-bottom: 0;
+
+        li a {
+          display: block;
+          margin: 5px 0;
+          padding-left: 18px;
+          font-size: 15px;
+          color: #637d88;
+          line-height: 25px;
+          position: relative;
+          transition: all .3s ease;
+          &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: calc(50% - 5px);
+            left: -5px;
+            width: 9px;
+            height: 9px;
+            background-color: #7e929b;
+            border-radius: 50%;
+            transition: all .3s ease;
+          }
+          &:hover {
+            color: #3e4f56;
+            &:before {
+              background-color: #3e4f56;
+            }
+          }
+        }
+      }
+    }
+
+    .support-contacts {
+      background-color: #edf5f8;
+      flex: 1 0 auto;
+      border-radius: 3px 0 0 0;
+      margin-right: -25px;
+      @media (max-width: 992px) {
+        width: 50%;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+        margin: 0 -25px;
+      }
+
+      .support-contacts-content {
+        padding: 22px 17px;
+        max-width: 310px;
+
+        .support-contacts-title {
+          margin-bottom: 20px;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          font-size: 19px;
+          font-weight: 400;
+          border-bottom: 1px solid #d1dde2;
+          color: #1c9951;
+        }
+
+        p {
+          margin-bottom: 5px;
+          line-height: 25px;
+          font-size: 15px;
+          color: #637d88;
+          padding-left: 15px;
+
+          a {
+            color: #7fb82a;
+          }
+        }
+
+        .support-logo-link {
+          display: block;
+          text-align: center;
+          margin-top: 35px;
+
+          img {
+            max-width: 160px;
+          }
+        }
+      }
+    }
+  }
+}

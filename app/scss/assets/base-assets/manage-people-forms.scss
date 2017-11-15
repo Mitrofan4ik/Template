@@ -1,118 +1,82 @@
-$mainFont: "Open Sans",
-sans-serif;
-.forms-manage-tabs {
-  margin-bottom: 32px;
-  ul {
-    justify-content: flex-start;
-    li {
-      margin-right: 10px;
+  $mainFont: "Open Sans",
+  sans-serif;
+  .forms-manage-tabs {
+    margin-bottom: 32px;
+    @media (max-width: 1320px) {
+      border-bottom: 1px solid #d0d7da;
+      background-color: #f7f7f7;
     }
-  }
-}
-
-.manage-form-title {
-  font-family: $mainFont;
-  font-size: 17px;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #1c9951;
-  margin-bottom: 15px;
-  display: block;
-  @media screen and (max-width: 550px) {
-    font-size: 14px;
-  }
-}
-
-.mf-select1 {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 18px;
-  .select-action {
-    margin: 0;
-    width: 22%;
-    flex-grow: 1;
-    margin-right: 20px;
-    @media screen and (max-width: 1200px) {
-      width: 25%;
-      margin-bottom: 15px;
-    }
-    @media screen and (max-width: 990px) {
-      width: 50%;
-    }
-    @media screen and (max-width: 920px) {
-      margin-right: 0;
-      width: 100%;
-    }
-    &:nth-child(3) {
-      @media screen and (max-width: 990px) {
-        margin-bottom: 0px;
+    ul {
+      justify-content: flex-start;
+      @media (max-width: 1320px) {
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
       }
-      @media screen and (max-width: 920px) {
-        margin-bottom: 15px;
-      }
-    }
-    .select-title {
-      @media screen and (max-width: 683px) {
-        display: none;
+      li {
+        margin-right: 10px;
+        @media (max-width: 1320px) {
+          margin-bottom: 0;
+          &:after {
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+          }
+        }
+        @media (max-width: 480px) {
+          padding: 10px 5px;
+        }
       }
     }
   }
-  .searh-input-holder {
-    width: 20%;
-    @media screen and (max-width: 920px) {
-      width: 100%;
+  
+  .manage-form-title {
+    font-family: $mainFont;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #1c9951;
+    margin-bottom: 15px;
+    display: block;
+    @media screen and (max-width: 550px) {
+      font-size: 14px;
     }
   }
-}
-
-.mf-select1--rec-form {
-  .select-action {
-    width: 22%;
-    flex-grow: 0;
-    @media screen and (max-width: 1200px) {
-      width: 25%;
-    }
-    @media screen and (max-width: 1024px) {
-      width: 40%;
-      margin-right: 20px;
-    }
-    @media screen and (max-width: 683px) {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-}
-
-.mf-check {
-  margin-bottom: 10px;
-}
-
-.mf-select2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
-  &__left {
+  
+  .mf-select1 {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    flex-basis: 50%;
-    @media screen and (max-width: 1240px) {
-      flex-basis: 100%;
-      margin-bottom: 15px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
+    margin-bottom: 18px;
+    justify-content: flex-start;
     .select-action {
       margin: 0;
-      width: 40%;
-      margin-right: 15px;
-      @media screen and (max-width: 683px) {
-        width: 100%;
-        margin-right: 0;
+      width: 22%;
+      // flex-grow: 1;
+      margin-right: 20px;
+      @media screen and (max-width: 1474px) {
+        width: 26%;
+      }
+      @media screen and (max-width: 1240px) {
+        flex-grow: 1;
+      }
+      @media screen and (max-width: 1200px) {
         margin-bottom: 15px;
+      }
+      @media screen and (max-width: 990px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 920px) {
+        margin-right: 0;
+        width: 100%;
+      }
+      &:nth-child(3) {
+        @media screen and (max-width: 990px) {
+          margin-bottom: 0;
+        }
+        @media screen and (max-width: 920px) {
+          margin-bottom: 15px;
+        }
       }
       .select-title {
         @media screen and (max-width: 683px) {
@@ -120,40 +84,159 @@ sans-serif;
         }
       }
     }
+    .searh-input-holder {
+      width: 20%;
+      @media screen and (max-width: 920px) {
+        width: 100%;
+      }
+    }
+    &--forms {
+      justify-content: space-between;
+      .select-action {
+        @media screen and (max-width: 1474px) {
+          width: 26%;
+          margin-bottom: 15px;
+        }
+        @media screen and (max-width: 1240px) {
+          flex-grow: 1;
+        }
+        @media screen and (max-width: 990px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 920px) {
+          margin-right: 0;
+          width: 100%;
+        }
+        &:nth-child(3) {
+          @media screen and (max-width: 990px) {
+            margin-bottom: 0;
+          }
+          @media screen and (max-width: 920px) {
+            margin-bottom: 15px;
+          }
+        }
+        .select-title {
+          @media screen and (max-width: 1474px) {
+            width: 31%;
+          }
+          @media screen and (max-width: 683px) {
+            display: none;
+          }
+          @media screen and (max-width: 990px) {
+            width: 15%;
+          }
+        }
+        .select-default {
+          @media screen and (max-width: 1474px) {
+            width: 69%;
+          }
+          @media screen and (max-width: 990px) {
+            width: 85%;
+          }
+          @media screen and (max-width: 683px) {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
-  &__right {
-    flex-basis: 38%;
+  
+  .mf-select1--rec-form {
+    .select-action {
+      width: 22%;
+      flex-grow: 0;
+      @media screen and (max-width: 1200px) {
+        width: 25%;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 40%;
+        margin-right: 20px;
+      }
+      @media screen and (max-width: 683px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .mf-check {
+    margin-bottom: 10px;
+  }
+  
+  .mf-select2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-grow: 1;
-    justify-content: flex-end;
-    @media screen and (max-width: 1240px) {
-      flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    &__left {
       display: flex;
-      justify-content: center;
-    }
-    button {
-      margin-left: 10px;
-      &:first-child {
-        width: 236px;
-        font-size: 15px;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-basis: 50%;
+      @media screen and (max-width: 1240px) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .select-action {
         margin: 0;
+        width: 40%;
+        margin-right: 15px;
         @media screen and (max-width: 683px) {
           width: 100%;
-          margin: 0;
+          margin-right: 0;
           margin-bottom: 15px;
         }
+        .select-default {
+          max-width: 70%;
+          @media screen and (max-width: 1474px) {
+            max-width: 70%;
+          }
+          @media screen and (max-width: 683px) {
+            max-width: 100%;
+          }
+        }
+        .select-title {
+          @media screen and (max-width: 683px) {
+            display: none;
+          }
+        }
       }
-      &:last-child {
-        width: 311px;
-        line-height: 16px;
-        @media screen and (max-width: 683px) {
-          width: 100%; 
+    }
+    &__right {
+      flex-basis: 38%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end;
+      @media screen and (max-width: 1240px) {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        margin-left: 10px;
+        &:first-child {
+          width: 236px;
+          font-size: 15px;
           margin: 0;
-          margin-bottom: 15px;
+          @media screen and (max-width: 683px) {
+            width: 100%;
+            margin: 0 0 15px;
+          }
+        }
+        &:last-child {
+          width: 311px;
+          line-height: 16px;
+          @media screen and (max-width: 683px) {
+            width: 100%;
+            margin: 0 0 15px;
+          }
         }
       }
     }
   }
-}

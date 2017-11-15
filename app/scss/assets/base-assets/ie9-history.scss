@@ -1,0 +1,53 @@
+.k-ie9 {
+  .history-content {
+    display: block;
+    font-size: 0;
+    &__right {
+      display: inline-block;
+      vertical-align: top;
+      width: 29%;
+      @media screen and (max-width: 1550px) {
+        width: 100%;
+        padding-right: 0;
+      }
+      .select-title {
+        width: 60px;
+      }
+    }
+    &__left {
+      display: inline-block;
+      vertical-align: top;
+      width: 71%;
+      @media screen and (max-width: 1550px) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+  .select-action {
+    display: block;
+    .select-title {
+      display: inline-block;
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+    }
+    .select-default {
+      display: inline-block;
+    }
+  }
+  .checkbox-group {
+    @media screen and (max-width: 1550px) {
+      display: block;
+      font-size: 0;
+      .checkbox--group {
+        display: inline-block;
+        vertical-align: middle;
+        .check-label {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

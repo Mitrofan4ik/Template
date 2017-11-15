@@ -194,18 +194,26 @@ input[type="search"]::-webkit-search-results-decoration {
 ::-webkit-input-placeholder {
   color: #c8c8c8;
 }
+
 ::-moz-placeholder {
   color: #c8c8c8;
 }
+
 :-ms-input-placeholder {
   color: #c8c8c8;
 }
+
 :-moz-placeholder {
   color: #c8c8c8;
 }
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   border: 0;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 input {
@@ -249,6 +257,7 @@ sub {
   top: -0.4em;
   vertical-align: baseline;
 }
+
 sub {
   top: 0.4em;
 }
@@ -277,5 +286,5 @@ img.aligncenter {
 }
 
 select::-ms-expand {
-    display: none;
+  display: none;
 }

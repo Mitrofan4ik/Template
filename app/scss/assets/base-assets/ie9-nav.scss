@@ -1,0 +1,36 @@
+.k-ie9 {
+  .nav-user {
+    display: block;
+    text-align: center;
+    &__avatar {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .nav-user-name {
+    margin-bottom: 0;
+  }
+  .nav-list {
+    display: block;
+    &__link {
+      display: table-cell;
+      width: 100%;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .nav-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .nav-form__input {
+    display: block;
+    font-size: 0;
+  }
+}

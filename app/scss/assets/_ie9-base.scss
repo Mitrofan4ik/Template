@@ -1,0 +1,55 @@
+.k-ie9 {
+  .main-content {
+    display: table;
+    width: 100%;
+    font-size: 0;
+  }
+  .nav-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 248px;
+  }
+  .general-block {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .select-default {
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #f4f4f4;
+      top: 50%;
+      right: 15px;
+      display: block;
+      width: 20px;
+      height: 100%;
+      transform: translate( 0%, -50%);
+      z-index: 1;
+    }
+    &.green {
+      &::before {
+        content: '';
+        background-color: #7fb82a;
+      }
+    }
+  }
+  .site-footer {
+    display: block;
+    overflow: hidden;
+  }
+  .zenwork-logo {
+    float: right;
+  }
+  .check-btn {
+    display: table;
+  }
+  .checkbox-holder {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}

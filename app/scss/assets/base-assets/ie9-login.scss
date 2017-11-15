@@ -1,0 +1,73 @@
+.k-ie9 {
+  .login-wrapper {
+    display: block;
+    font-size: 0;
+    margin-left: -385px;
+    margin-top: -240px;
+    transform: inherit;
+    @media screen and (max-width: 830px) {
+      margin-left: -312px;
+      margin-top: -240px;
+    }
+    @media screen and (max-width: 640px) {
+      margin-left: 0;
+      margin-top: -240px;
+      left: 7px;
+    }
+  }
+  .login-left-side {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .login-right-side {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .btn-video {
+    display: block;
+    font-size: 0;
+    .video-icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 19px;
+    }
+  }
+  .input-block {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    .checkbox-holder {
+      display: inline-block;
+      vertical-align: middle;
+      float: left;
+      .check-label {
+        display: table;
+        vertical-align: middle;
+        .icon-check {
+          display: table-cell;
+        }
+      }
+    }
+    .forpot-pass-link {
+      display: inline-block;
+      vertical-align: middle;
+      float: right;
+    }
+  }
+  .checkbox-holder .check-label input[type='checkbox']:checked+span.icon-check::before {
+    transform: inherit;
+    top: 2px;
+    left: 4px;
+  }
+  .copyright {
+    display: block;
+    transform: inherit;
+    width: auto;
+    left: 50%;
+    margin-left: -335px;
+  }
+}

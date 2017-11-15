@@ -1,0 +1,128 @@
+//= template-assets/header--reacttable
+<!-- main-content -->
+<div class="main-content">
+<!-- site-header -->
+<!-- navigation -->
+<div id="jsNav" class="nav-block">
+//= template-assets/nav
+</div>
+<!-- END:navigation -->
+<div id="jsGeneral" class="general-block">
+  <header id="header" class="site-header">
+    //= template-assets/header-single-form
+  </header>
+  <!-- END:site-header -->
+  <!-- site content -->
+  <div class="content">
+
+    <!-- report filters -->
+    <div class="report-filters">
+        <ul>
+            <li class="active-filter"><a href="#">Payer Report</a></li>
+            <li><a href="#">Payer Report by User</a></li>
+            <li><a href="#">Recipient Report</a></li>
+            <li><a href="#">TIN Match Report</a></li>
+            <li><a href="#">Unsubmitted forms Report</a></li>
+            <li><a href="#">Submission History ReportW9 Report</a></li>
+            <li><a href="#">W9 Report</a></li>
+            <li><a href="#">Opt-In Report</a></li>
+            <li><a href="#">Forms Delivery Report</a></li>
+            <li><a href="#">W8 Request Status</a></li>
+        </ul>
+    </div>
+    <!-- END:report filters -->
+
+    <!-- reporter container -->
+    <div class="reporter-container">
+        <p class="report-choose">Choose payer headers that you want to export to excel.</p>
+        <div class="wrap-calendar">
+            <!-- <div class="input-group date">
+                <input type="text" class="form-control datepicker" value="12-02-2012">
+                <div class="input-group-addon">
+                    <span class="icon-calendar"></span>
+                </div>
+            </div> -->
+            <div class="input-group input-daterange">
+                <div class="input-group-addon">from</div>
+
+                <div class="form-control">
+                    <input type="text" value="2017-04-05" placeholder="Select Date">
+                    <div class="input-ico"><span></span></div>
+                </div>
+
+                <div class="input-group-addon">to</div>
+                <div class="form-control">
+                    <input type="text" value="2017-04-19" placeholder="Select Date">
+                    <div class="input-ico"><span></span></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="report-table">
+            <div class="report-col">
+                <div class="report-head">
+                    <p>Available Headers</p>
+                    <a href="#" class="report-arrow arrow-right">
+                        <span><img src="img/icon-report-arrow.png" alt="image"></span>
+                        <span><img src="img/icon-report-arrow.png" alt="image"></span>
+                    </a>
+                </div>
+                <div class="report-body">
+                    <ul>
+                        <li class="selected">First Name</li>
+                        <li>Middle Name</li>
+                        <li>Last Name </li>
+                        <li>Suffix</li>
+                        <li>City</li>
+                        <li>State</li>
+                        <li>Zip code</li>
+                        <li>Country</li>
+                        <li>Email</li>
+                        <li>Phone Number</li>
+                        <li>First Name</li>
+                        <li>Middle Name</li>
+                        <li>Last Name </li>
+                        <li>Suffix</li>
+                        <li>City</li>
+                        <li>State</li>
+                        <li>Zip code</li>
+                        <li>Country</li>
+                        <li>Email</li>
+                        <li>Phone Number</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="report-col">
+                <div class="report-head">
+                    <p>Selected Headers</p>
+                    <a href="#" class="report-arrow arrow-left">
+                        <span><img src="img/icon-report-arrow.png" alt="image"></span>
+                        <span><img src="img/icon-report-arrow.png" alt="image"></span>
+                    </a>
+                </div>
+                <div class="report-body">
+                    <ul>
+                        <li>Tax ID</li>
+                        <li>TIN Type</li>
+                        <li>Date Added</li>
+                        <li class="selected">Address</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="report-footer">
+            <button type="button" name="button" class="report-btn">Run Report</button>
+        </div>
+    </div>
+    <!-- END:reporter container -->
+
+
+
+
+
+
+  </div>
+  <!-- END: site content -->
+  //= template-assets/footer-content
+  </div>
+  //= template-assets/footer

@@ -68,6 +68,7 @@ div.k-grid-header,
     padding: 15px 0;
     vertical-align: middle;
     position: relative;
+    text-align: center;
     &:nth-child(2) {
       &>.k-link {
         text-align: left;
@@ -197,6 +198,11 @@ div.k-grid-header,
       text-align: left;
     }
   }
+  .k-grid-content tr td span {
+    @media screen and (max-width: 1296px) {
+      font-size: 13px;
+    }
+  }
 }
 
 .table-check--manage-form1 {
@@ -291,7 +297,6 @@ div.k-grid-header,
   }
   .k-filter-row th,
   .k-grid-header th.k-header {
-   
     &::after {
       display: none;
     }
@@ -366,8 +371,41 @@ div.k-grid-header,
 }
 
 .table-check--history {
+  @media screen and (max-width: 1770px) {
+    &.k-widget {
+      width: 100%;
+      margin: 0 auto 15px;
+      @media screen and (max-width: 1685px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 1564px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 1296px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 940px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 657px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 640px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 487px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
+    }
+  }
   .k-grid-content tr td {
-    padding: 6px 0;
+    padding: 13px 0;
     text-align: center;
     &:nth-child(2) {
       text-align: center;
@@ -384,6 +422,76 @@ div.k-grid-header,
       &>.k-link {
         text-align: center;
         padding-left: 5px;
+      }
+    }
+  }
+}
+
+.table-check--review {
+  .k-filter-row th,
+  .k-grid-header th.k-header {
+    padding: 15px 0;
+    vertical-align: middle;
+    position: relative;
+    &:nth-child(4),
+    &:nth-child(3) {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 19px;
+        width: 15px;
+        height: 13px;
+        background: url("../img/icon-filter.png")no-repeat center center;
+        background-size: contain;
+        transform: translateY(-50%);
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.table-check--ves {
+  .k-grid-content tr td {
+    padding: 13px 0;
+    text-align: center;
+    &:nth-child(2) {
+      text-align: center;
+      span {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+  .k-filter-row th,
+  .k-grid-header th.k-header {
+    padding: 15px 0;
+    vertical-align: middle;
+    position: relative;
+    &:nth-child(4),
+    &:nth-child(3) {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 19px;
+        width: 15px;
+        height: 13px;
+        background: url("../img/icon-filter.png")no-repeat center center;
+        background-size: contain;
+        transform: translateY(-50%);
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+      &:after {
+        display: none;
       }
     }
   }

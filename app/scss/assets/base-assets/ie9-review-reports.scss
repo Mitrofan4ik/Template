@@ -1,0 +1,103 @@
+.k-ie9 {
+  .review-select-group {
+    display: block;
+    font-size: 0;
+    .select-action {
+      display: inline-block;
+      vertical-align: middle;
+      width: 23.3%;
+      @media screen and (max-width: 1900px) {
+        width: 50%;
+        margin-bottom: 15px;
+      }
+      @media screen and (max-width: 1200px) {
+        width: 1000%;
+      }
+      @media screen and (max-width: 1474px) {
+        width: 100%;
+      }
+      &:last-child {
+        text-align: right;
+        @media screen and (max-width: 1900px) {
+          text-align: left;
+        }
+      }
+      &:first-child {
+        width: 30%;
+        @media screen and (max-width: 1900px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 1474px) {
+          width: 100%;
+        }
+        .select-title {
+          width: 220px;
+          margin-bottom: 15px;
+        }
+      }
+      .select-title {
+        width: 100px;
+        @media screen and (max-width: 1474px) {
+          margin-bottom: 15px;
+        }
+      }
+      .select-default {
+        @media screen and (max-width: 1474px) {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .review-check-group {
+    display: table;
+    width: 100%;
+  }
+  .review-button {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    @media screen and (max-width: 1174px) {
+      display: inline-block;
+      width: 100%;
+      margin-top: 15px;
+      text-align: center;
+    }
+    @media screen and (max-width: 1120px) {
+      margin-top: 0;
+    }
+    .download-btn {
+      @media screen and (max-width: 1120px) {
+        margin-bottom: 15px;
+      } 
+      &:nth-child(1) {
+        width: 235px;
+        @media screen and (max-width: 1120px) {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        width: 280px;
+        @media screen and (max-width: 1120px) {
+          width: 100%;
+        }
+      }
+    }
+    button {
+      &:nth-child(3) {
+        @media screen and (max-width: 1120px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .action-block {
+    display: block;
+    font-size: 0;
+    .action-btn {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 20px;
+    }
+  }
+}

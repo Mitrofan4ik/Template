@@ -1,44 +1,44 @@
-//= template-assets/header
+//= template-assets/header--reacttable
 <!-- main-content -->
 <div class="main-content">
-<!-- site-header -->
-<!-- navigation -->
-<div id="jsNav" class="nav-block">
-//= template-assets/nav
-</div>
-<!-- END:navigation -->
-<div id="jsGeneral" class="general-block">
-  <header id="header" class="site-header">
-    //= template-assets/header-single-form
-  </header>
-  <!-- END:site-header -->
-  <!-- site content -->
-  <div class="content">
+  <!-- site-header -->
+  <!-- navigation -->
+  <div id="jsNav" class="nav-block">
+    //= template-assets/nav
+  </div>
+  <!-- END:navigation -->
+  <div id="jsGeneral" class="general-block">
+    <header id="header" class="site-header">
+      //= template-assets/header-single-form
+    </header>
+    <!-- END:site-header -->
+    <!-- site content -->
+    <div class="content">
 
-    <!-- form top -->
-    <div class="top-form-options">
+      <!-- form top -->
+      <div class="top-form-options">
         <div class="top-form-option-left">
-            <a href="#" class="green-btn">Single Filing</a>
-            <a href="#">Import Bulk Data</a>
+          <a href="#" class="green-btn">Single Filing</a>
+          <a href="#">Import Bulk Data</a>
         </div>
         <div class="top-form-option-right">
-            <a href="#">Save & Continue</a>
-            <a href="#">Save & Add New 1099-MISC</a>
-            <a href="#">Save & Add New Form</a>
-            <a href="#" class="btn-danger">Cancel</a>
+          <a href="#">Save & Continue</a>
+          <a href="#">Save & Add New 1099-MISC</a>
+          <a href="#">Save & Add New Form</a>
+          <a href="#" class="btn-danger">Cancel</a>
         </div>
-    </div>
-    <!-- END:form top -->
+      </div>
+      <!-- END:form top -->
 
-    <!-- form container -->
-    <div class="single-form-container">
+      <!-- form container -->
+      <div class="single-form-container">
 
         <!-- left -->
         <div class="col-lg-5 col-sm-12 col-xs-12">
-            <div class="row block">
-                <div class="col-lg-12">
-                    <div class="select-default">
-                      <select>
+          <div class="row block">
+            <div class="col-lg-12">
+              <div class="select-default">
+                <select>
                         <option value="Select Status">Select Status</option>
                         <option value="Not Submitted">Not Submitted</option>
                         <option value="Submitted">Submitted</option>
@@ -47,87 +47,87 @@
                         <option value="Blocked">Blocked</option>
                         <option value="ReSubmit">ReSubmit</option>
                       </select>
-                    </div>
-                    <div class="select-options">
-                        <a href="#" class="add-doc"></a>
-                        <a href="#" class="edit-doc"></a>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <p class="label-block">Payer’s Federal Identification Number</p>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="radio-btn">
-                          <input type="radio" id="radio1" name="radio-group" checked>
-                          <label for="radio1">*EIN</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="radio-btn">
-                          <input type="radio" id="radio2" name="radio-group">
-                          <label for="radio2">*SSN</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
-
-                </div>
+              </div>
+              <div class="select-options">
+                <a href="#" class="add-doc"></a>
+                <a href="#" class="edit-doc"></a>
+              </div>
             </div>
-            <div class="row block">
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Name</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+            <div class="col-lg-12">
+              <p class="label-block">Payer’s Federal Identification Number</p>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="radio-btn">
+                  <input type="radio" id="radio1" name="radio-group" checked>
+                  <label for="radio1">*EIN</label>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*State</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+                <div class="input-wrapper">
+                  <input type="text">
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Address</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="radio-btn">
+                  <input type="radio" id="radio2" name="radio-group">
+                  <label for="radio2">*SSN</label>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Zip</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+                <div class="input-wrapper">
+                  <input type="text">
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*City</label>
-                        </div>
-                        <div class="select-default">
-                          <select>
+              </div>
+
+            </div>
+          </div>
+          <div class="row block">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Name</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*State</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Address</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Zip</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*City</label>
+                </div>
+                <div class="select-default">
+                  <select>
                             <option value="Select Status">Select Status</option>
                             <option value="Not Submitted">Not Submitted</option>
                             <option value="Submitted">Submitted</option>
@@ -136,14 +136,14 @@
                             <option value="Blocked">Blocked</option>
                             <option value="ReSubmit">ReSubmit</option>
                           </select>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
-            <div class="row block">
-                <div class="col-lg-12">
-                    <div class="select-default">
-                      <select>
+          </div>
+          <div class="row block">
+            <div class="col-lg-12">
+              <div class="select-default">
+                <select>
                         <option value="Select Status">Select Status</option>
                         <option value="Not Submitted">Not Submitted</option>
                         <option value="Submitted">Submitted</option>
@@ -152,87 +152,87 @@
                         <option value="Blocked">Blocked</option>
                         <option value="ReSubmit">ReSubmit</option>
                       </select>
-                    </div>
-                    <div class="select-options">
-                        <a href="#" class="add-doc"></a>
-                        <a href="#" class="edit-doc"></a>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <p class="label-block">Payer’s Federal Identification Number</p>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="radio-btn">
-                          <input type="radio" id="radio3" name="radio-group" checked>
-                          <label for="radio3">*EIN</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="radio-btn">
-                          <input type="radio" id="radio4" name="radio-group">
-                          <label for="radio4">*SSN</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
-
-                </div>
+              </div>
+              <div class="select-options">
+                <a href="#" class="add-doc"></a>
+                <a href="#" class="edit-doc"></a>
+              </div>
             </div>
-            <div class="row block">
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Name</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+            <div class="col-lg-12">
+              <p class="label-block">Payer’s Federal Identification Number</p>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="radio-btn">
+                  <input type="radio" id="radio3" name="radio-group" checked>
+                  <label for="radio3">*EIN</label>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*State</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+                <div class="input-wrapper">
+                  <input type="text">
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Address</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="radio-btn">
+                  <input type="radio" id="radio4" name="radio-group">
+                  <label for="radio4">*SSN</label>
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*Zip</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text">
-                        </div>
-                    </div>
+                <div class="input-wrapper">
+                  <input type="text">
                 </div>
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                    <div class="input-group">
-                        <div class="label-wrap">
-                          <label>*City</label>
-                        </div>
-                        <div class="select-default">
-                          <select>
+              </div>
+
+            </div>
+          </div>
+          <div class="row block">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Name</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*State</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Address</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*Zip</label>
+                </div>
+                <div class="input-wrapper">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="input-group">
+                <div class="label-wrap">
+                  <label>*City</label>
+                </div>
+                <div class="select-default">
+                  <select>
                             <option value="Select Status">Select Status</option>
                             <option value="Not Submitted">Not Submitted</option>
                             <option value="Submitted">Submitted</option>
@@ -241,139 +241,139 @@
                             <option value="Blocked">Blocked</option>
                             <option value="ReSubmit">ReSubmit</option>
                           </select>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
-                    <div class="input-wrap-full">
-                        <label for="" class="form-label">Account Number (see Instructions)</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
-                    <div class="input-wrap-checkbox">
-                        <div class="checkbox-holder">
-                            <label class="check-label">
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
+              <div class="input-wrap-full">
+                <label for="" class="form-label">Account Number (see Instructions)</label>
+                <input type="text">
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
+              <div class="input-wrap-checkbox">
+                <div class="checkbox-holder">
+                  <label class="check-label">
                             <input type="checkbox">
                             <span class="icon-check"></span>
                             <p>FATCA filing requirement</p>
                             </label>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
-                    <div class="input-wrap-checkbox">
-                        <div class="checkbox-holder">
-                            <label class="check-label">
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 block-bottom">
+              <div class="input-wrap-checkbox">
+                <div class="checkbox-holder">
+                  <label class="check-label">
                             <input type="checkbox">
                             <span class="icon-check"></span>
                             <p>Second TIN Notice</p>
                             </label>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- right -->
         <div class="col-lg-7 col-sm-12 col-xs-12">
-            <div class="row">
+          <div class="row">
 
-                <!-- right 1/3 -->
-                <div class="col-lg-4 col-sm-6">
-                    <div class="row">
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">1. Rents</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">2. Royalties</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">3. Other Income</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">4. Federal IncomTax with Held</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">5. Fishing Boat Proceeds</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">6. Medical and healthcare payments</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">7. Nonemployee compensation</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">8. substitute payments in lieu of dividends or interest</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
+            <!-- right 1/3 -->
+            <div class="col-lg-4 col-sm-6">
+              <div class="row">
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">1. Rents</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
                     </div>
+                  </div>
                 </div>
-                <!-- end: right 1/3 -->
 
-                <!-- right 2/3-->
-                <div class="col-lg-5 col-sm-6">
-                    <div class="row">
-                        <div class="col-lg-12 border-bt-rg block-omb">
-                            <p class="omb-title">OMB No. 1545-0115</p>
-                            <div class="select-default select-omb">
-                              <select>
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">2. Royalties</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">3. Other Income</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">4. Federal IncomTax with Held</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">5. Fishing Boat Proceeds</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">6. Medical and healthcare payments</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">7. Nonemployee compensation</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">8. substitute payments in lieu of dividends or interest</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end: right 1/3 -->
+
+            <!-- right 2/3-->
+            <div class="col-lg-5 col-sm-6">
+              <div class="row">
+                <div class="col-lg-12 border-bt-rg block-omb">
+                  <p class="omb-title">OMB No. 1545-0115</p>
+                  <div class="select-default select-omb">
+                    <select>
                                 <option value="Select Status">Select Status</option>
                                 <option value="Not Submitted">Not Submitted</option>
                                 <option value="Submitted">Submitted</option>
@@ -382,213 +382,211 @@
                                 <option value="Blocked">Blocked</option>
                                 <option value="ReSubmit">ReSubmit</option>
                               </select>
-                            </div>
-                            <a href="#" class="omb-change-btn">Change Tax Year</a>
-                            <p class="omb-bottom-text">Form 1099 - MISC</p>
-                        </div>
+                  </div>
+                  <a href="#" class="omb-change-btn">Change Tax Year</a>
+                  <p class="omb-bottom-text">Form 1099 - MISC</p>
+                </div>
 
-                        <div class="col-lg-12 border-bt-rg">
-                            <div class="single-form-cs-checkbox">
-                                <div class="checkbox-holder">
-                                    <label class="check-label">
+                <div class="col-lg-12 border-bt-rg">
+                  <div class="single-form-cs-checkbox">
+                    <div class="checkbox-holder">
+                      <label class="check-label">
                                         <p>9. Payer made direct sales of $5,000 or more of consumer products to a buyer (recipient) for resale</p>
                                         <input type="checkbox">
                                         <span class="icon-check"></span>
-
                                     </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">10. Crop insurance proceeds</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">11.</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">12.</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">13. Excess golden parachute payments</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 input-wrap-cur border-bt-rg">
-                            <label for="" class="form-label">14. Gross proceeds paid to an attorney</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+                  </div>
                 </div>
-                <!-- END: right 2/3 -->
 
-                <!-- right 3/3 -->
-                <div class="col-lg-3 single-form-sidebar col-sm-12 hidden-xs hidden-sm">
-                    <div class="row">
-                        <div class="single-form-sidebar-top">
-                            <p>Miscellaneous <br>Income</p>
-                        </div>
-                        <div class="single-form-sidebar-mid">
-                            <p>Copy A For Internal Revenue Service Center</p>
-                        </div>
-                        <div class="single-form-sidebar-mid">
-                            <p>Form 1096 not required for e-filed forms</p>
-                        </div>
-                        <div class="single-form-sidebar-mid">
-                            <p>For Privacy Act and Paperwork Reduction Act Notice,see the</p>
-                        </div>
-                        <div class="single-form-sidebar-mid">
-                            <p>2016 General Instructions for Certain Information Returns</p>
-                        </div>
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">10. Crop insurance proceeds</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
                     </div>
+                  </div>
                 </div>
-                <!-- right 3/3 -->
 
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">11.</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">12.</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">13. Excess golden parachute payments</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 input-wrap-cur border-bt-rg">
+                  <label for="" class="form-label">14. Gross proceeds paid to an attorney</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
+            <!-- END: right 2/3 -->
+
+            <!-- right 3/3 -->
+            <div class="col-lg-3 single-form-sidebar col-sm-12 hidden-xs hidden-sm">
+              <div class="row">
+                <div class="single-form-sidebar-top">
+                  <p>Miscellaneous <br>Income</p>
+                </div>
+                <div class="single-form-sidebar-mid">
+                  <p>Copy A For Internal Revenue Service Center</p>
+                </div>
+                <div class="single-form-sidebar-mid">
+                  <p>Form 1096 not required for e-filed forms</p>
+                </div>
+                <div class="single-form-sidebar-mid">
+                  <p>For Privacy Act and Paperwork Reduction Act Notice,see the</p>
+                </div>
+                <div class="single-form-sidebar-mid">
+                  <p>2016 General Instructions for Certain Information Returns</p>
+                </div>
+              </div>
+            </div>
+            <!-- right 3/3 -->
+
+          </div>
         </div>
 
         <!-- bottom -->
         <div class="col-lg-12 col-sm-12 col-xs-12 single-form-bottom-row">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-lg-4 input-wrap-cur block-bottom">
-                            <label for="" class="form-label">15a. Section 409A deferrals</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 input-wrap-cur block-bottom">
-                            <label for="" class="form-label">15b. Section 409A income</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 input-wrap-cur block-bottom">
-                            <label for="" class="form-label">16. State tax with held</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
+          <div class="row">
+            <div class="col-lg-5 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-lg-4 input-wrap-cur block-bottom">
+                  <label for="" class="form-label">15a. Section 409A deferrals</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-7 col-sm-6 col-xs-12">
-                    <div class="row">
-                        <div class="col-lg-8 bottom-select block-bottom">
-                            <div class="row">
-                                <div class="col-lg-6 input-wrap-cur ">
-                                    <label for="" class="form-label">17. State / Payer's state no.</label>
-                                    <div class="select-default">
-                                      <select>
-                                        <option value="Select Status">Select Status</option>
-                                        <option value="Not Submitted">Not Submitted</option>
-                                        <option value="Submitted">Submitted</option>
-                                        <option value="Rejected">Rejected</option>
-                                        <option value="Approved">Approved</option>
-                                        <option value="Blocked">Blocked</option>
-                                        <option value="ReSubmit">ReSubmit</option>
-                                      </select>
-                                    </div>
-                                    <div class="select-default">
-                                      <select>
-                                        <option value="Select Status">Select Status</option>
-                                        <option value="Not Submitted">Not Submitted</option>
-                                        <option value="Submitted">Submitted</option>
-                                        <option value="Rejected">Rejected</option>
-                                        <option value="Approved">Approved</option>
-                                        <option value="Blocked">Blocked</option>
-                                        <option value="ReSubmit">ReSubmit</option>
-                                      </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 input-wrap-cur without-label">
-                                    <div class="input-group">
-                                        <span class="cur">$</span>
-                                        <div class="input-wrapper">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="cur">$</span>
-                                        <div class="input-wrapper">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 input-wrap-cur bottom-select block-bottom">
-                            <label for="" class="form-label">18. State income.</label>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <span class="cur">$</span>
-                                <div class="input-wrapper">
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-4 input-wrap-cur block-bottom">
+                  <label for="" class="form-label">15b. Section 409A income</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
                     </div>
+                  </div>
                 </div>
-
+                <div class="col-lg-4 input-wrap-cur block-bottom">
+                  <label for="" class="form-label">16. State tax with held</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-lg-7 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-lg-8 bottom-select block-bottom">
+                  <div class="row">
+                    <div class="col-lg-6 input-wrap-cur ">
+                      <label for="" class="form-label">17. State / Payer's state no.</label>
+                      <div class="select-default">
+                        <select>
+                                        <option value="Select Status">Select Status</option>
+                                        <option value="Not Submitted">Not Submitted</option>
+                                        <option value="Submitted">Submitted</option>
+                                        <option value="Rejected">Rejected</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Blocked">Blocked</option>
+                                        <option value="ReSubmit">ReSubmit</option>
+                                      </select>
+                      </div>
+                      <div class="select-default">
+                        <select>
+                                        <option value="Select Status">Select Status</option>
+                                        <option value="Not Submitted">Not Submitted</option>
+                                        <option value="Submitted">Submitted</option>
+                                        <option value="Rejected">Rejected</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Blocked">Blocked</option>
+                                        <option value="ReSubmit">ReSubmit</option>
+                                      </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 input-wrap-cur without-label">
+                      <div class="input-group">
+                        <span class="cur">$</span>
+                        <div class="input-wrapper">
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <span class="cur">$</span>
+                        <div class="input-wrapper">
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 input-wrap-cur bottom-select block-bottom">
+                  <label for="" class="form-label">18. State income.</label>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <span class="cur">$</span>
+                    <div class="input-wrapper">
+                      <input type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+      </div>
+      <!-- END:form container -->
+
     </div>
-    <!-- END:form container -->
-
-
+    //= template-assets/footer-content
   </div>
-  <!-- END: site content -->
   //= template-assets/footer
-</div>

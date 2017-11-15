@@ -9,7 +9,29 @@
   <!-- END:navigation -->
   <div id="jsGeneral" class="general-block">
     <header id="header" class="site-header">
-      //= template-assets/header-manage-forms
+      <div class="site-header__info">
+        <button id="jsBurgerMenuMobile" class="nav-top__burger--mobile"></button>
+        <div class="rigth-side">
+          <div class="icon-title">
+            <img src="img/header/icon-history-white.png" alt="image">
+          </div>
+          <span class="header-title">History</span>
+        </div>
+        <div class="left-side">
+          <a href="#" class="header-link">
+            <img src="img/header/icon-people-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-questions-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-search-white.png" alt="image">
+          </a>
+          <a href="#" class="header-link">
+            <img src="img/header/icon-settings-white.png" alt="image">
+          </a>
+        </div>
+      </div>
     </header>
     <!-- END:site-header -->
     <!-- site content -->
@@ -22,63 +44,113 @@
           <li>W8/W9 Requests History</li>
         </ul>
       </div>
-    </div>
-    <div class="history-content">
-      <div class="history-content__right">
-        <div class="select-action">
-          <span class="select-title">Payer</span>
-          <div class="select-default">
-            <select>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-              <option value="Select Payer">Select Payer</option>
-            </select>
+      <div class="history-content">
+        <div class="history-content__right">
+          <div class="select-action">
+            <span class="select-title">Payer</span>
+            <div class="select-default">
+              <select>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+                <option value="Select Payer">Select Payer</option>
+              </select>
+            </div>
+          </div>
+          <div class="checkbox-group">
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> (All)
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> Submissions
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> Approvals
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> Rejected / Resubmit
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> Accepted With Errors
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> Payments
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> State Filing
+            </div>
+            <div class="checkbox checkbox--group">
+              <label class="check-label">
+                <input type="checkbox">
+                <span class="icon-check"></span>
+              </label> State Reconciliation
+            </div>
           </div>
         </div>
-      </div>
-      <div class="history-content__left">
-        <div id="grid" class="table-check table-check--history"></div>
-        <script>
-          $(document).ready(function() {
-            $("#grid").kendoGrid({
-              dataSource: {
-                type: "odata",
-                transport: {
-                  read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+        <div class="history-content__left">
+          <div id="grid" class="table-check table-check--history"></div>
+          <script>
+            $(document).ready(function() {
+              $("#grid").kendoGrid({
+                dataSource: {
+                  type: "odata",
+                  transport: {
+                    read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                  },
+                  pageSize: 13
                 },
-                pageSize: 13
-              },
-              height: 790,
-              groupable: true,
-              sortable: true,
-              pageable: {
-                refresh: true,
-                pageSizes: true,
-                buttonCount: 5
-              },
-              columns: [{
-                template: "<span>[9/28/2017 1:29:22 AM]</span>",
-                field: "Time",
-                title: "Time",
-                width: 101
-              }, {
-                template: "<span>201234110 <span class='history-approved'>approved. </span><span class='history-download'>Click to Download </span>official 1099-K.</span>",
-                field: "Message",
-                title: "Message",
-                width: 140
-              }]
+                height: 790,
+                groupable: true,
+                sortable: true,
+                pageable: {
+                  refresh: true,
+                  pageSizes: true,
+                  buttonCount: 5
+                },
+                columns: [{
+                  template: "<span>[9/28/2017 1:29:22 AM]</span>",
+                  field: "Time",
+                  title: "Time",
+                  width: 101
+                }, {
+                  template: "<span>201234110 <strong class='history-approved'>approved. </strong><strong class='history-download'>Click to Download </strong>official 1099-K.</span>",
+                  field: "Message",
+                  title: "Message",
+                  width: 140
+                }]
+              });
             });
-          });
-        </script>
-        <!-- pagination -->
-        <div class="pagination">
-          //= template-assets/pagination
+          </script>
+          <!-- pagination -->
+          <div class="pagination">
+            //= template-assets/pagination
+          </div>
+          <!-- END: pagination -->
         </div>
-        <!-- END: pagination -->
       </div>
     </div>
     <!-- END: site content -->

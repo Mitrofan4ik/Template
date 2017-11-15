@@ -1,0 +1,40 @@
+.k-ie9 {
+  .site-header {
+    &__info {
+      display: table;
+      font-size: 0;
+      width: 100%;
+      .rigth-side {
+        display: table-cell;
+        @media (max-width: 1770px) {
+          padding-left: 63px;
+        }
+        @media (max-width: 487px) {
+          display: inline-block;
+          text-align: center;
+          padding-left: 0px;
+        }
+        .icon-title {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+      .left-side {
+        display: table-cell;
+        text-align: right;
+        @media (max-width: 487px) {
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .header-title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .header-link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

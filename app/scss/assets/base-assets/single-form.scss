@@ -116,12 +116,21 @@
         min-width: 160px;
         text-align: center;
         margin-right: -3px;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            color: #828282;
+        }
     }
     .green-btn {
         position: relative;
         background: #1c9951;
         color: #edf5f8;
         box-shadow: none;
+        &:hover {
+            color: #edf5f8;
+            opacity: 0.8;
+        }
+
     }
 }
 
@@ -140,6 +149,10 @@
         text-align: center;
         padding: 10px 10px;
         border-radius: 3px;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     .btn-danger {
         background: #ee5b48;
@@ -334,6 +347,9 @@
     }
     .single-form-cs-checkbox {
         min-height: 72px;
+        .checkbox-holder .check-label {
+            display: block;
+        }
         p {
             position: relative;
             font-size: 14px;
@@ -375,7 +391,7 @@
             font-weight: 600;
         }
         .select-omb {
-            max-width: 130px;
+            max-width: 160px;
             .select-default select {
                 color: #666;
             }
@@ -392,10 +408,14 @@
             border-radius: 3px;
             background-color: #1c9951;
             display: block;
-            max-width: 130px;
+            max-width: 160px;
             margin: 0 auto;
             margin-top: 6px;
             margin-bottom: 14px;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+                opacity: 0.8
+            }
         }
         .omb-bottom-text {
             color: #7fb82a;

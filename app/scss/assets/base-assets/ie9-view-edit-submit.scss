@@ -1,0 +1,63 @@
+.k-ie9 {
+  .select-ves-group {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    @media screen and (max-width: 1474px) {
+      width: 100%;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 1240px) {
+      text-align: left;
+    }
+    .select-action {
+      display: inline-block;
+      vertical-align: middle;
+      width: 34%;
+      margin-bottom: 0;
+    }
+  }
+  .pagination+.btn {
+    margin-right: 10px;
+  }
+  .review-check-group--ves {
+    .select-ves-group {
+      .select-action {
+        width: 36%;
+        @media screen and (max-width: 1240px) {
+          width: 100%;
+          margin-bottom: 15px;
+          margin-left: 0;
+        }
+        &:first-child {
+          float: left;
+          @media screen and (max-width: 1240px) {
+            float: none;
+            margin-left: 0;
+          }
+        }
+        &:last-child {
+          float: right;
+          @media screen and (max-width: 1240px) {
+            float: none;
+            margin-left: 0;
+          }
+        }
+      }
+      .select-title {
+        text-align: left;
+        width: 130px;
+        @media screen and (max-width: 1240px) {
+          margin-bottom: 15px;
+        }
+      }
+      .select-default {
+        @media screen and (max-width: 1240px) {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
